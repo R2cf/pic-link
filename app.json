@@ -1,0 +1,40 @@
+{
+    "name": "Sahu Pic Uploader Bot",
+    "description": "A bot that can upload medias to Telegra.ph",
+    "logo": "https://te.legra.ph/file/864c53d6da96917351e53.jpg",
+    "keywords": [
+        "Telegra.ph",
+        "Uploader",
+        "Telegram Bot",
+        "Benchamxd"
+    ],
+    "owner": "https://t.me/vijaysahu_1",
+    "repository": "https://github.com/R2cf/pic-link/",
+    "success_url": "https://t.me/vijaysahu_1",
+    "env": {
+        "TG_BOT_TOKEN": {
+            "description": "You Telegram Bot Token from @BotFather",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API Hash from my.telegram.org",
+            "value": ""
+        },
+        "APP_ID": {
+            "description": "Your API ID from my.telegram.org",
+            "value": ""
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
